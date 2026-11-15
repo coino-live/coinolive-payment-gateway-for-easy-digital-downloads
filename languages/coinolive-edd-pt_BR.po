@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt_BR\n"
+"X-Domain: coinolive-edd\n"
+
+msgid "Coino Live Crypto Payments needs Easy Digital Downloads 3 to be installed and active."
+msgstr "O Coino Live Pagamentos em Cripto precisa do Easy Digital Downloads 3 instalado e ativo."
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Dashboard"
+msgstr "Painel"
+
+msgid "Every five minutes"
+msgstr "A cada cinco minutos"
+
+msgid "Coino Live"
+msgstr "Coino Live"
+
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Você não tem permissão para acessar esta página."
+
+msgid "Open Coino Live dashboard"
+msgstr "Abrir o painel do Coino Live"
+
+msgid "Add your Coino Live API key to see your balance and payments here."
+msgstr "Adicione sua chave de API do Coino Live para ver seu saldo e pagamentos aqui."
+
+msgid "Balance"
+msgstr "Saldo"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Withdraw"
+msgstr "Sacar"
+
+msgid "Your whole Coino Live account (all gateways), after fees. Withdraw from the Coino Live dashboard."
+msgstr "Toda a sua conta Coino Live (todos os gateways), após as taxas. Saque pelo painel do Coino Live."
+
+msgid "No balance yet. Paid orders are added here after fees."
+msgstr "Ainda sem saldo. Os pedidos pagos são adicionados aqui após as taxas."
+
+msgid "Payments"
+msgstr "Pagamentos"
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Order number"
+msgstr "Número do pedido"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Order"
+msgstr "Pedido"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Amount"
+msgstr "Valor"
+
+msgid "Received"
+msgstr "Recebido"
+
+msgid "Transactions"
+msgstr "Transações"
+
+msgid "No payments found."
+msgstr "Nenhum pagamento encontrado."
+
+msgid "Newer"
+msgstr "Mais recentes"
+
+msgid "Older"
+msgstr "Mais antigos"
+
+msgid "%s USD missing"
+msgstr "Faltam %s USD"
+
+msgid "Payment page"
+msgstr "Página de pagamento"
+
+msgid "Paid"
+msgstr "Pago"
+
+msgid "Partially paid"
+msgstr "Pago parcialmente"
+
+msgid "Confirming"
+msgstr "Confirmando"
+
+msgid "Waiting for payment"
+msgstr "Aguardando pagamento"
+
+msgid "Expired"
+msgstr "Expirado"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Could not load from Coino Live: %s"
+msgstr "Não foi possível carregar do Coino Live: %s"
+
+msgid "The Coino Live API key is not set."
+msgstr "A chave de API do Coino Live não foi definida."
+
+msgid "Could not reach Coino Live: %s"
+msgstr "Não foi possível conectar ao Coino Live: %s"
+
+msgid "There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting."
+msgstr "Não há uma API do Coino Live em %1$s (HTTP %2$d). Verifique a configuração da URL da API."
+
+msgid "Unexpected answer from Coino Live."
+msgstr "Resposta inesperada do Coino Live."
+
+msgid "Coino Live (crypto)"
+msgstr "Coino Live (cripto)"
+
+msgid "Pay with crypto"
+msgstr "Pagar com cripto"
+
+msgid "Nonce verification has failed"
+msgstr "A verificação de segurança falhou"
+
+msgid "Error"
+msgstr "Erro"
+
+msgid "Crypto payment is not set up yet. Please choose another payment method."
+msgstr "O pagamento em cripto ainda não foi configurado. Escolha outro método de pagamento."
+
+msgid "Crypto payment is not available in %s. Please choose another payment method."
+msgstr "O pagamento em cripto não está disponível em %s. Escolha outro método de pagamento."
+
+msgid "Payment Error"
+msgstr "Erro de pagamento"
+
+msgid "Coino Live refused the payment: %s"
+msgstr "A Coino Live recusou o pagamento: %s"
+
+msgid "Crypto payment is not available right now: %s"
+msgstr "O pagamento em cripto não está disponível agora: %s"
+
+msgid "Order #%1$s at %2$s"
+msgstr "Pedido #%1$s em %2$s"
+
+msgid "Coino Live returned a payment that does not belong to this order. Please try again."
+msgstr "O Coino Live retornou um pagamento que não pertence a este pedido. Tente novamente."
+
+msgid "Coino Live payment %1$s created (%2$s USD). Waiting for the customer to pay."
+msgstr "Pagamento Coino Live %1$s criado (%2$s USD). Aguardando o pagamento do cliente."
+
+msgid "Another Coino Live payment (%1$s) was paid for this order: %2$s. Refund or settle it with the customer."
+msgstr "Outro pagamento Coino Live (%1$s) foi pago para este pedido: %2$s. Reembolse ou acerte com o cliente."
+
+msgid "Coino Live payment is paid but was for %1$s, the order expects %2$s. Check before giving access."
+msgstr "O pagamento Coino Live foi pago, mas era de %1$s e o pedido é de %2$s. Verifique antes de liberar o acesso."
+
+msgid "Coino Live payment %1$s confirmed: %2$s"
+msgstr "Pagamento Coino Live %1$s confirmado: %2$s"
+
+msgid "Coino Live: the payment was sent and is waiting for network confirmations."
+msgstr "Coino Live: o pagamento foi enviado e aguarda confirmações da rede."
+
+msgid "Coino Live: only %1$s of %2$s USD received so far. The customer was asked to send the rest."
+msgstr "Coino Live: apenas %1$s de %2$s USD recebidos até agora. O cliente foi orientado a enviar o restante."
+
+msgid "Coino Live: the payment closed with %1$s of %2$s USD received (in your Coino Live balance). Settle the rest with the customer."
+msgstr "Coino Live: o pagamento foi encerrado com %1$s de %2$s USD recebidos (no seu saldo Coino Live). Acerte o restante com o cliente."
+
+msgid "Coino Live: the payment window closed without payment."
+msgstr "Coino Live: o prazo de pagamento terminou sem pagamento."
+
+msgid "Your crypto payment was received and is being confirmed on the network. We will email you when the order is paid."
+msgstr "Seu pagamento em cripto foi recebido e está sendo confirmado na rede. Enviaremos um e-mail quando o pedido estiver pago."
+
+msgid "We have not seen your payment yet. If you have not paid, you can still do so:"
+msgstr "Ainda não identificamos seu pagamento. Se você ainda não pagou, ainda pode pagar:"
+
+msgid "Part of your crypto payment has arrived. Please send the rest:"
+msgstr "Parte do seu pagamento em cripto chegou. Envie o restante:"
+
+msgid "Open the payment page"
+msgstr "Abrir a página de pagamento"
+
+msgid "The payment time ran out. Please contact us or place the order again."
+msgstr "O prazo de pagamento acabou. Fale conosco ou faça o pedido novamente."
+
+msgid "Connection"
+msgstr "Conexão"
+
+msgid "API key"
+msgstr "Chave de API"
+
+msgid "Create one in your Coino Live dashboard under Developers. Keys start with ck_live_ (or ck_test_ on the test network)."
+msgstr "Crie uma no painel do Coino Live, em Desenvolvedores. As chaves começam com ck_live_ (ou ck_test_ na rede de teste)."
+
+msgid "Webhook signing secret (optional)"
+msgstr "Segredo de assinatura do webhook (opcional)"
+
+msgid "From your gateway settings (whsec_…). When set, webhooks with a wrong signature are refused. Orders are always checked against the API before they change, so this is an extra layer."
+msgstr "Nas configurações do seu gateway (whsec_…). Quando definido, webhooks com assinatura errada são recusados. Os pedidos são sempre conferidos na API antes de mudar, então esta é uma camada extra."
+
+msgid "Payment window (minutes)"
+msgstr "Prazo de pagamento (minutos)"
+
+msgid "How long the customer has to send the payment. Between 15 and 10080."
+msgstr "Quanto tempo o cliente tem para enviar o pagamento. Entre 15 e 10080."
+
+msgid "API URL"
+msgstr "URL da API"
+
+msgid "Leave as is unless Coino Live support tells you otherwise."
+msgstr "Não altere, a menos que o suporte do Coino Live peça."
+
+msgid "Add your API key below and save."
+msgstr "Adicione sua chave de API abaixo e salve."
+
+msgid "The API URL must start with https://."
+msgstr "A URL da API deve começar com https://."
+
+msgid "Connected, but Coino Live cannot price payments in %s yet. The payment method stays hidden at checkout."
+msgstr "Conectado, mas o Coino Live ainda não aceita pagamentos em %s. O método de pagamento fica oculto na finalização da compra."
+
+msgid "Connected to Coino Live."
+msgstr "Conectado ao Coino Live."
+
+msgid "Webhook URL (sent with every payment, nothing to configure):"
+msgstr "URL do webhook (enviada em cada pagamento, nada a configurar):"
+
+msgid "Coino Live refused the API key: %s"
+msgstr "O Coino Live recusou a chave de API: %s"
+
+msgid "Coino Live Crypto Payments for Easy Digital Downloads"
+msgstr "Coino Live Pagamentos em Cripto para Easy Digital Downloads"
+
+msgid "Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in Easy Digital Downloads. Customers pay on the Coino Live checkout; orders update automatically."
+msgstr "Aceite USDT, Bitcoin, Ethereum, TRON, TON, Solana e mais no Easy Digital Downloads. Os clientes pagam na página da Coino Live; os pedidos são atualizados automaticamente."
+
