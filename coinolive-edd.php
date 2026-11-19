@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name:       Coino Live Crypto Payments for Easy Digital Downloads
- * Plugin URI:        https://coino.live/plugins
+ * Plugin URI:        https://coino.live/api-guide#integrations
  * Description:       Accept USDT, Bitcoin, Ethereum, TRON, TON, Solana and more in Easy Digital Downloads. Customers pay on the Coino Live checkout; orders update automatically.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Coino Live
  * Author URI:        https://coino.live
  * License:           GPL-2.0-or-later
@@ -17,16 +17,19 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'COINOLIVE_EDD_VERSION', '1.0.0' );
+define( 'COINOLIVE_EDD_VERSION', '1.0.1' );
 define( 'COINOLIVE_EDD_FILE', __FILE__ );
 define( 'COINOLIVE_EDD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'COINOLIVE_EDD_URL', plugin_dir_url( __FILE__ ) );
 
+// Only in the download from coino.live (see the file); WordPress.org delivers translations itself.
+if ( is_readable( COINOLIVE_EDD_DIR . 'includes/bundled-translations.php' ) ) {
+	require_once COINOLIVE_EDD_DIR . 'includes/bundled-translations.php';
+}
+
 add_action(
 	'plugins_loaded',
 	static function () {
-		load_plugin_textdomain( 'coinolive-edd', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-
 		if ( ! function_exists( 'edd_insert_payment' ) || ! function_exists( 'edd_get_order' ) ) {
 			add_action(
 				'admin_notices',

@@ -2,9 +2,9 @@
 
 A free WordPress plugin that lets your Easy Digital Downloads store accept crypto payments, including USDT, USDC, Bitcoin, Ethereum, TRON, TON and Solana. Customers pay on the Coino Live payment page. Orders update automatically, and Easy Digital Downloads delivers the receipt and download links as usual.
 
-**Version 1.0.0** · requires Easy Digital Downloads 3, WordPress 6.7+, PHP 8.0+ · License: GPL-2.0-or-later
+**Version 1.0.1** · requires Easy Digital Downloads 3, WordPress 6.7+, PHP 8.0+ · License: GPL-2.0-or-later
 
-- Download the ready-to-install zip: [coinolive-edd-1.0.0.zip](https://coino.live/downloads/coinolive-edd-1.0.0.zip)
+- Download the ready-to-install zip: [coinolive-edd-1.0.1.zip](https://coino.live/downloads/coinolive-edd-1.0.1.zip)
 - API reference: [coino.live/api-guide](https://coino.live/api-guide) · Support: [support@coino.live](mailto:support@coino.live)
 
 ## Features
@@ -47,6 +47,14 @@ No. An email and a password are enough to sign up.
 Open orders are still checked every five minutes and when the customer returns to your shop.
 
 ## Changelog
+
+### 1.0.1
+- Tested with WordPress 7.1.
+- Error messages are escaped where they are created.
+- The readme lists what the plugin sends to the Coino Live API (External services).
+- Plugin URI points to the plugins section of the Coino Live API guide.
+- Translations load on init; the WordPress.org package gets them from translate.wordpress.org.
+- A website address entered as the API URL now gives a clear error instead of an empty one.
 
 ### 1.0.0
 - First release for Coino Live API v2.

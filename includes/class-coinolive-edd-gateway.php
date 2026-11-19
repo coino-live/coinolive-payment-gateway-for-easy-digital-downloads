@@ -188,7 +188,7 @@ class CoinoLive_EDD_Gateway {
 
 		$payment = $client->create_payment( $data, $key );
 		if ( (string) ( $payment['metadata']['edd_order_id'] ?? '' ) !== (string) $order_id || 'open' !== $payment['status'] ) {
-			throw new CoinoLive_EDD_Exception( __( 'Coino Live returned a payment that does not belong to this order. Please try again.', 'coinolive-edd' ) );
+			throw new CoinoLive_EDD_Exception( esc_html__( 'Coino Live returned a payment that does not belong to this order. Please try again.', 'coinolive-edd' ) );
 		}
 
 		$all   = (array) edd_get_order_meta( $order_id, self::META_PAYMENTS, true );
@@ -459,7 +459,7 @@ class CoinoLive_EDD_Gateway {
 			return '<span style="color:#008a20">' . esc_html__( 'Connected to Coino Live.', 'coinolive-edd' ) . '</span> ' . esc_html__( 'Webhook URL (sent with every payment, nothing to configure):', 'coinolive-edd' ) . ' <code>' . esc_html( rest_url( 'coinolive-edd/v1/webhook' ) ) . '</code>';
 		} catch ( CoinoLive_EDD_Exception $e ) {
 			/* translators: %s: error message */
-			return '<span style="color:#b32d2e">' . esc_html( sprintf( __( 'Coino Live refused the API key: %s', 'coinolive-edd' ), $e->getMessage() ) ) . '</span>';
+			return '<span style="color:#b32d2e">' . sprintf( esc_html__( 'Coino Live refused the API key: %s', 'coinolive-edd' ), wp_kses( $e->getMessage(), array() ) ) . '</span>';
 		}
 	}
 

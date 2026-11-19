@@ -78,7 +78,7 @@ class CoinoLive_EDD_Client {
 	 */
 	private function request( $method, $path, $body = null, $idempotency_key = null, $full = false ) {
 		if ( '' === $this->api_key ) {
-			throw new CoinoLive_EDD_Exception( __( 'The Coino Live API key is not set.', 'coinolive-edd' ) );
+			throw new CoinoLive_EDD_Exception( esc_html__( 'The Coino Live API key is not set.', 'coinolive-edd' ) );
 		}
 
 		$headers = array(
@@ -103,27 +103,27 @@ class CoinoLive_EDD_Client {
 		$response = wp_remote_request( $this->base_url . $path, $args );
 		if ( is_wp_error( $response ) ) {
 			/* translators: %s: network error message */
-			throw new CoinoLive_EDD_Exception( sprintf( __( 'Could not reach Coino Live: %s', 'coinolive-edd' ), $response->get_error_message() ) );
+			throw new CoinoLive_EDD_Exception( esc_html( sprintf( __( 'Could not reach Coino Live: %s', 'coinolive-edd' ), $response->get_error_message() ) ) );
 		}
 
 		$status = (int) wp_remote_retrieve_response_code( $response );
 		$json   = json_decode( wp_remote_retrieve_body( $response ), true );
 
 		// A redirect or an HTML 404 means the API URL points at a website, not at the API.
-		if ( ( $status >= 300 && $status < 400 ) || ( 404 === $status && ! is_array( $json ) ) ) {
+		if ( ( $status >= 300 && $status < 400 ) || ( 404 === $status && ( ! is_array( $json ) || '' === (string) ( $json['message'] ?? '' ) ) ) ) {
 			/* translators: 1: the API URL from the settings, 2: HTTP status code */
-			throw new CoinoLive_EDD_Exception( sprintf( __( 'There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting.', 'coinolive-edd' ), $this->base_url, $status ), $status );
+			throw new CoinoLive_EDD_Exception( esc_html( sprintf( __( 'There is no Coino Live API at %1$s (HTTP %2$d). Check the API URL setting.', 'coinolive-edd' ), $this->base_url, $status ) ), (int) $status );
 		}
 		if ( $status < 200 || $status >= 300 ) {
-			$message = is_array( $json ) && isset( $json['message'] ) ? (string) $json['message'] : 'HTTP ' . $status;
+			$message = is_array( $json ) && ! empty( $json['message'] ) ? (string) $json['message'] : 'HTTP ' . $status;
 			if ( is_array( $json ) && ! empty( $json['errors'] ) && is_array( $json['errors'] ) ) {
 				$first = reset( $json['errors'] );
 				$message = is_array( $first ) ? (string) reset( $first ) : $message;
 			}
-			throw new CoinoLive_EDD_Exception( $message, $status );
+			throw new CoinoLive_EDD_Exception( esc_html( $message ), (int) $status );
 		}
 		if ( ! is_array( $json ) || ! array_key_exists( 'data', $json ) ) {
-			throw new CoinoLive_EDD_Exception( __( 'Unexpected answer from Coino Live.', 'coinolive-edd' ), $status );
+			throw new CoinoLive_EDD_Exception( esc_html__( 'Unexpected answer from Coino Live.', 'coinolive-edd' ), (int) $status );
 		}
 
 		return $full ? $json : $json['data'];
